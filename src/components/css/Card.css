@@ -1,0 +1,285 @@
+.card-container {
+  background-image: url(../background.png);
+  background-size: cover;
+  width: 90px;
+  height: 90px;
+  border: 2px solid #635858;
+  margin: 2px;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+
+.card-container .card {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  background-color: black;
+  overflow: hidden;
+}
+
+.card-container .card .config,
+.card-container .card .mass {
+  display: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  font-size: 10px;
+}
+
+.card-container .card .atomicNumber,
+.card-container .card .symbol,
+.card-container .card .name {
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.card-container .card .atomicNumber {
+  top: 5px;
+  left: 50%;
+  font-size: 14px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.card-container .card .symbol {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 25px;
+}
+
+.card-container .card .name {
+  bottom: 5px;
+  left: 50%;
+  font-size: 14px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.card-container:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.card-container:hover .card {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.card-container:hover .card .mass {
+  display: block;
+  position: absolute;
+}
+
+.card-container:hover .card .config {
+  top: 5px;
+  right: 5px;
+  max-width: 70%;
+  font-size: 12px;
+  float: right;
+}
+
+.card-container:hover .card .mass {
+  bottom: 5px;
+  text-align: center;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.card-container:hover .card .symbol {
+  top: 40%;
+  font-size: 20px;
+}
+
+.card-container:hover .card .name {
+  bottom: 20px;
+  font-size: 10px;
+}
+
+.card-container:hover .card .atomicNumber {
+  left: 8px;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  font-size: 12px;
+}
+
+.modal-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 15;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-container .modal {
+  width: 500px;
+  height: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 2rem;
+  border: 1px solid;
+  z-index: 20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal-container .modal .close {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: pointer;
+  font-size: 30px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.modal-container .modal .close:hover {
+  -webkit-transform: scale(1.4) rotate(45deg);
+          transform: scale(1.4) rotate(45deg);
+}
+
+.modal-container .modal .detail {
+  margin-bottom: 2rem;
+}
+
+.modal-container .modal .detail .element_Symbol {
+  font-size: 150px;
+}
+
+.modal-container .modal .detail .element_name {
+  font-size: 30px;
+  text-align: center;
+}
+
+.modal-container .modal .field {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0.4rem auto;
+  font-size: 18px;
+}
+
+.modal-container .modal .field p,
+.modal-container .modal .field span {
+  font-weight: bold;
+}
+
+.disable {
+  display: none;
+}
+
+.disable-tile {
+  opacity: 0.3;
+  background-image: url(../background.png);
+  background-size: cover;
+  width: 90px;
+  height: 90px;
+  border: 2px solid #635858;
+  margin: 2px;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.disable-tile .card {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  background-color: black;
+  overflow: hidden;
+}
+
+.disable-tile .card .config,
+.disable-tile .card .mass {
+  display: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  font-size: 10px;
+}
+
+.disable-tile .card .atomicNumber,
+.disable-tile .card .symbol,
+.disable-tile .card .name {
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.disable-tile .card .atomicNumber {
+  top: 5px;
+  left: 50%;
+  font-size: 14px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.disable-tile .card .symbol {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 25px;
+}
+
+.disable-tile .card .name {
+  bottom: 5px;
+  left: 50%;
+  font-size: 14px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+/*# sourceMappingURL=Card.css.map */
