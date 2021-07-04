@@ -1,0 +1,27 @@
+.table {
+  max-width: 1700px;
+  min-width: 1300px;
+  width: 1690px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.left {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.right {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sub-table {
+  width: fit-content;
+  margin: 2rem auto;
+}

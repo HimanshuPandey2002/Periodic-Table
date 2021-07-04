@@ -1,5 +1,4 @@
 .card-container {
-  background-image: url(../background.png);
   background-size: cover;
   width: 90px;
   height: 90px;
@@ -212,7 +211,7 @@
 
 .disable-tile {
   opacity: 0.3;
-  background-image: url(../background.png);
+  background-image: url(../../assets/background.png);
   background-size: cover;
   width: 90px;
   height: 90px;

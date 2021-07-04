@@ -1,5 +1,5 @@
 .card-container {
-  background-image: url(../background.png);
+  // background-image: url(../giphy.gif);
   background-size: cover;
   width: 90px;
   height: 90px;
@@ -104,13 +104,11 @@
   position: absolute;
   top: 0;
   left: 0;
-  //   background-color: red;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 15;
   background-color: rgba(0, 0, 0, 0.5);
-  //   backdrop-filter: blur(2px);
 
   .modal {
     width: 500px;
@@ -172,7 +170,7 @@
 
 .disable-tile {
   opacity: 0.3;
-  background-image: url(../background.png);
+  background-image: url(../../assets/background.png);
   background-size: cover;
   width: 90px;
   height: 90px;
