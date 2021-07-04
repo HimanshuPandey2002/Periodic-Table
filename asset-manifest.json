@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Periodic-Table/static/css/main.fd0c711c.chunk.css",
+    "main.js": "/Periodic-Table/static/js/main.5ab382e8.chunk.js",
+    "main.js.map": "/Periodic-Table/static/js/main.5ab382e8.chunk.js.map",
+    "runtime-main.js": "/Periodic-Table/static/js/runtime-main.5c80df72.js",
+    "runtime-main.js.map": "/Periodic-Table/static/js/runtime-main.5c80df72.js.map",
+    "static/js/2.642b37de.chunk.js": "/Periodic-Table/static/js/2.642b37de.chunk.js",
+    "static/js/2.642b37de.chunk.js.map": "/Periodic-Table/static/js/2.642b37de.chunk.js.map",
+    "index.html": "/Periodic-Table/index.html",
+    "static/css/main.fd0c711c.chunk.css.map": "/Periodic-Table/static/css/main.fd0c711c.chunk.css.map",
+    "static/js/2.642b37de.chunk.js.LICENSE.txt": "/Periodic-Table/static/js/2.642b37de.chunk.js.LICENSE.txt",
+    "static/media/Card.css": "/Periodic-Table/static/media/giphy.b9c12605.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5c80df72.js",
+    "static/js/2.642b37de.chunk.js",
+    "static/css/main.fd0c711c.chunk.css",
+    "static/js/main.5ab382e8.chunk.js"
+  ]
+}
